@@ -1,3 +1,5 @@
+//exportación de data para evitar código repetitivo en los selects
+
 export const speciesData = [
   "Human",
   "Alien",
