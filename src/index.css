@@ -19,6 +19,6 @@
   .input,
   select,
   .btn {
-    @apply text-accent focus:bg-accent/10 hover:bg-accent/10 border border-accent/20 bg-transparent outline-none placeholder:font-light placeholder:text-white/30 focus:ring-1 focus:ring-accent;
+    @apply text-accent focus:bg-accent/10 hover:bg-accent/10 border border-accent/50 bg-transparent outline-none placeholder:font-light placeholder:text-white/70 focus:ring-1 focus:ring-accent;
   }
 }
