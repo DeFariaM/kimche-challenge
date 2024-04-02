@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    @apply font-sora bg-black text-white;
+  }
+
+  .h1 {
+    @apply text-4xl font-medium;
+  }
+
+  .input,
+  select,
+  .btn {
+    @apply h-[40px] rounded-md px-6;
+  }
+  .input,
+  select,
+  .btn {
+    @apply text-accent focus:bg-accent/10 hover:bg-accent/10 border border-accent/20 bg-transparent outline-none placeholder:font-light placeholder:text-white/30 focus:ring-1 focus:ring-accent;
+  }
+}
