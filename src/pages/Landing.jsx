@@ -12,7 +12,7 @@ import { VscDebugStart } from "react-icons/vsc";
 
 export const Landing = () => {
   return (
-    <div className="page w-full overflow-hidden bg-red-200">
+    <div className="page w-full overflow-hidden">
       <div className="container mx-auto  flex flex-col justify-between  sm:flex-row sm:px-36">
         <div className="flex flex-col py-16 text-center  sm:justify-center sm:space-y-16">
           {/* logo */}
