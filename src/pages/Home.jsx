@@ -42,10 +42,10 @@ export const Home = ({ data, setPageNum }) => {
         <div className="flex h-[70vh] flex-col justify-center space-y-4 text-center text-3xl">
           <div className="flex flex-col items-center justify-center space-y-4">
             <FaRegSadTear className="justify-center text-6xl text-accent" />
-            <p>Lo sentimos</p>
+            <p>We are sorry</p>
           </div>
 
-          <p>No hay coincidencias con la búsqueda</p>
+          <p>There are no matches</p>
         </div>
       )}
     </div>

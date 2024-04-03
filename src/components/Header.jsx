@@ -64,7 +64,7 @@ export const Header = ({
             <input
               type="text"
               onChange={(e) => setNameC(e.target.value)}
-              placeholder="Busca a tu personaje favorito"
+              placeholder="Search your favorite character!"
               value={nameC}
               className="input mx-auto min-w-[350px]"
             />

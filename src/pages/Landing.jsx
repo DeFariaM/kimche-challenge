@@ -15,15 +15,15 @@ export const Landing = () => {
           {/* title */}
           <div className="mb-8 hidden sm:flex sm:flex-col">
             <h1 className="h1 mb-10">
-              Encuentra todo en
-              <br /> un solo <span className="text-accent ">lugar.</span>
+              Find everything
+              <br /> at one <span className="text-accent ">place.</span>
             </h1>
             <p className="text-secondary">Wubba Lubba Dub Dub</p>
           </div>
           {/* redirect to home */}
           <div className="sm:mt-0">
             <button className=" btn">
-              <Link to={"/home"}>Empezar!</Link>
+              <Link to={"/home"}>Start!</Link>
             </button>
           </div>
         </div>

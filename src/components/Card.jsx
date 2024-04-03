@@ -10,11 +10,11 @@ export const Card = ({ img, name }) => {
       <div className="absolute bottom-0 translate-y-full items-center transition-all duration-300 group-hover:-translate-y-14 group-hover:xl:-translate-y-24">
         <div className="flex items-center gap-x-2 rounded-e-md bg-accent p-2 text-[14px] font-medium tracking-[0.2em]">
           {/* part 1 */}
-          <div className="pl-6 delay-100">VER</div>
+          <div className="pl-6 delay-100">SEE</div>
 
           {/* part 2 */}
           <div className="translate-y-[500%] transition-all delay-150 duration-300 group-hover:translate-y-0">
-            DETALLE
+            DETAIL
           </div>
         </div>
       </div>
