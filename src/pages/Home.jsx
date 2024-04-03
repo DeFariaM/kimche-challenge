@@ -2,6 +2,12 @@ import { useState } from "react";
 import { Card, Detail, Paginate } from "../components";
 import { FaRegSadTear } from "react-icons/fa";
 
+//framer-motion
+import { motion } from "framer-motion";
+
+//variants
+import { fadeIn } from "../utils";
+
 export const Home = ({ data, setPageNum }) => {
   const { results, info } = data.characters;
   const { pages, count } = info;
@@ -13,7 +19,11 @@ export const Home = ({ data, setPageNum }) => {
       {results.length ? (
         <>
           {/* cards */}
-          <div
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
             className={`grid grid-cols-2 justify-center gap-4 sm:grid-cols-5
       ${results.length <= 10 ? "sm:h-[70vh] sm:grid-rows-2" : results.length <= 15 ? "sm:grid-rows-3" : "sm:grid-rows-4"}`}
           >
@@ -29,7 +39,7 @@ export const Home = ({ data, setPageNum }) => {
                 <Card key={index} img={char.image} name={char.name} />
               </div>
             ))}
-          </div>
+          </motion.div>
           {/* pagination */}
           <div className="pt-2">
             <Paginate setPageNum={setPageNum} pages={pages} count={count} />
