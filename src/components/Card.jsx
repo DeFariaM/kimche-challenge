@@ -5,6 +5,8 @@ export const Card = ({ img, name }) => {
       <div className="absolute bottom-0 mx-auto w-full rounded-md bg-accent/80 text-center">
         <h2 className="rounded py-1 text-center text-xl font-medium">{name}</h2>
       </div>
+
+      {/* hover para mostrar detalle */}
       {/* gradiente del hover */}
       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-accent to-secondary/80 opacity-0 transition-all duration-700 group-hover:opacity-80"></div>
       <div className="absolute bottom-0 translate-y-full items-center transition-all duration-300 group-hover:-translate-y-14 group-hover:xl:-translate-y-24">

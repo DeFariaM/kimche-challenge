@@ -14,7 +14,7 @@
   .input,
   select,
   .btn {
-    @apply h-[40px] rounded-md px-6;
+    @apply h-[40px] max-w-[320px] rounded-md px-6;
   }
   .input,
   select,

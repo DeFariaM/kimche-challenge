@@ -1,5 +1,10 @@
+//hooks
 import { useState } from "react";
+
+//components
 import { Card, Detail, Paginate } from "../components";
+
+//icons
 import { FaRegSadTear } from "react-icons/fa";
 
 //framer-motion
@@ -11,6 +16,8 @@ import { fadeIn } from "../utils";
 export const Home = ({ data, setPageNum }) => {
   const { results, info } = data.characters;
   const { pages, count } = info;
+
+  //aux para mostrar el detalle y definir de cuál personaje se va a mostrar la info
   const [showInfo, setShowInfo] = useState(false);
   const [character, setCharacter] = useState([]);
 

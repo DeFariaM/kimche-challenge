@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 //variants
 import { fadeIn } from "../utils";
 
+//icons
+import { VscDebugStart } from "react-icons/vsc";
+
 export const Landing = () => {
   return (
     <div className="h-full w-full overflow-hidden ">
@@ -52,10 +55,11 @@ export const Landing = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="sm:mt-0"
+            className="w-fitsm:mt-0 mx-auto"
           >
-            <button className=" btn">
-              <Link to={"/home"}>Start!</Link>
+            <button className=" btn flex items-center space-x-2">
+              <Link to={"/home"}>Start</Link>
+              <VscDebugStart className="text-xl" />
             </button>
           </motion.div>
         </div>

@@ -1,6 +1,7 @@
 import ReactPaginate from "react-paginate";
 
 export const Paginate = ({ pages, setPageNum }) => {
+  //función para definir página a mostrar en la query a la API
   const handlePageClick = (event) => {
     const newOffset = event.selected + 1;
     setPageNum(newOffset);
