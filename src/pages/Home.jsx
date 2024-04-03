@@ -1,7 +1,8 @@
-import { Card } from "../components";
+import { Card, Paginate } from "../components";
 
-export const Home = ({ data, setPageNum, pageNum, loading }) => {
-  const { results } = data.characters;
+export const Home = ({ data, setPageNum }) => {
+  const { results, info } = data.characters;
+  const { pages, count } = info;
 
   return (
     <div className="container mx-auto px-6 py-4">
@@ -12,6 +13,10 @@ export const Home = ({ data, setPageNum, pageNum, loading }) => {
         {results?.map(({ image, name }, index) => (
           <Card key={index} img={image} name={name} />
         ))}
+      </div>
+      {/* pagination */}
+      <div className="pt-2">
+        <Paginate setPageNum={setPageNum} pages={pages} count={count} />
       </div>
     </div>
   );
