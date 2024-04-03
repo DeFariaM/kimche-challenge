@@ -10,7 +10,12 @@
   .h1 {
     @apply text-4xl font-medium;
   }
-
+  body {
+    @apply overflow-x-hidden leading-relaxed;
+  }
+  .page {
+    @apply h-screen w-full overflow-y-hidden;
+  }
   .input,
   select,
   .btn {

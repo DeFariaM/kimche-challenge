@@ -12,7 +12,7 @@ import { VscDebugStart } from "react-icons/vsc";
 
 export const Landing = () => {
   return (
-    <div className="h-full w-full overflow-hidden ">
+    <div className="page w-full overflow-hidden bg-red-200">
       <div className="container mx-auto  flex flex-col justify-between  sm:flex-row sm:px-36">
         <div className="flex flex-col py-16 text-center  sm:justify-center sm:space-y-16">
           {/* logo */}
@@ -69,7 +69,7 @@ export const Landing = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="absolute -bottom-56 mx-auto sm:relative sm:-bottom-0 sm:h-screen sm:max-w-[40vw]"
+          className="mx-auto sm:relative sm:-bottom-0 sm:h-screen sm:max-w-[40vw]"
         >
           <img src="/landingrick.svg" className=" h-screen" />
         </motion.div>
