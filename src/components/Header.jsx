@@ -75,7 +75,7 @@ export const Header = ({
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="absolute right-[5%] top-[80px] z-10 flex min-h-[25vh] w-[90%] flex-col justify-center space-y-5 bg-black  xl:relative xl:right-0 xl:top-0 xl:min-h-0 xl:w-full xl:flex-row  xl:items-center xl:space-x-2 xl:space-y-0 "
+          className="absolute right-[5%] top-[80px] z-10 flex min-h-[300px] w-[90%] flex-col justify-center space-y-5 bg-black  xl:relative xl:right-0 xl:top-0 xl:min-h-0 xl:w-full xl:flex-row  xl:items-center xl:space-x-2 xl:space-y-0 "
         >
           {/* input search */}
           <div className="relative mx-auto items-center">
