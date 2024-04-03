@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    @apply font-sora bg-black text-white;
+    @apply bg-black font-sora text-white;
   }
 
   .h1 {
@@ -19,6 +19,6 @@
   .input,
   select,
   .btn {
-    @apply text-accent focus:bg-accent/10 hover:bg-accent/10 border border-accent/50 bg-transparent outline-none placeholder:font-light placeholder:text-white/70 focus:ring-1 focus:ring-accent;
+    @apply border border-accent/50 bg-transparent text-accent outline-none transition-all duration-300 placeholder:font-light placeholder:text-white/70 hover:bg-accent/10 focus:bg-accent/10 focus:ring-1 focus:ring-accent;
   }
 }
