@@ -1,7 +1,7 @@
 # Desafío para Dev
 
-Nombre postulante: María De Faría
-Link a la app en producción: [LINK DEL DEPLOY]
+- Nombre postulante: María De Faría
+- Link a la app en producción: [Deploy](https://rickandmorty-kimche.vercel.app/)
 
 ## Instrucciones
 
