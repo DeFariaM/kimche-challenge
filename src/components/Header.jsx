@@ -1,6 +1,7 @@
 //icons
 import { BiSearch } from "react-icons/bi";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { MdRestartAlt } from "react-icons/md";
 
 //components
 import { Select } from "./Select";
@@ -38,8 +39,10 @@ export const Header = ({
     setStatusC("");
   };
 
+  //aux para menú móvil
   const [toggle, setToggle] = useState(null);
 
+  //Para mostrar el menú siempre que el ancho de la pantalla sea mayor a 1028px
   useEffect(() => {
     if (window.innerWidth < 1028) {
       setToggle(false);
@@ -48,6 +51,7 @@ export const Header = ({
     }
   }, []);
 
+  //para ocultar el menú cuando se reduce el tamaño de la pantalla
   window.addEventListener("resize", () => {
     if (window.innerWidth > 1028) setToggle(true);
     if (window.innerWidth < 1028) setToggle(false);
@@ -64,6 +68,7 @@ export const Header = ({
         <img src="/LogoA.svg" className="max-w-[150px]" />
       </motion.div>
 
+      {/* menu */}
       {toggle && (
         <motion.div
           variants={fadeIn("down", 0.2)}
@@ -85,16 +90,16 @@ export const Header = ({
           </div>
 
           {/* selects */}
-          <div className="flex flex-col space-x-2 space-y-5 xl:flex-row xl:space-y-0">
+          <div className="mx-auto flex w-fit flex-col justify-center space-y-5 xl:flex-row xl:space-x-2 xl:space-y-0">
             <Select name="Gender" data={genderData} setFunc={setGenderC} />
             <Select name="Specie" data={speciesData} setFunc={setSpeciesC} />
             <Select name="Status" data={statusData} setFunc={setStatusC} />
           </div>
 
           {/* reset */}
-          <div className="">
+          <div className="mx-auto w-fit">
             <button className="btn mb-5 xl:mb-0" onClick={reset}>
-              Reset
+              <MdRestartAlt className="text-2xl" />
             </button>
           </div>
         </motion.div>
