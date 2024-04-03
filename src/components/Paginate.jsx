@@ -7,10 +7,12 @@ export const Paginate = ({ pages, setPageNum }) => {
   };
   return (
     <ReactPaginate
-      nextLabel="Next >"
+      nextLabel=">"
       onPageChange={handlePageClick}
+      breakLabel=".."
       pageCount={pages}
-      previousLabel="< Previous"
+      previousLabel="<"
+      pageRangeDisplayed={0}
       renderOnZeroPageCount={null}
       containerClassName="flex space-x-4 justify-center text-xl p-4 font-semibold w-fit mx-auto text-white/60"
       activeLinkClassName="text-accent"

@@ -1,7 +1,7 @@
 export const Card = ({ img, name }) => {
   return (
-    <div className="group relative max-h-[230px] max-w-[230px] items-center overflow-hidden">
-      <img src={img} alt="" width={230} height={230} className="rounded-md" />
+    <div className="group relative items-center overflow-hidden sm:max-h-[230px] sm:max-w-[230px]">
+      <img src={img} alt="" className="rounded-md" />
       <div className="absolute bottom-0 mx-auto w-full rounded-md bg-accent/80 text-center">
         <h2 className="rounded py-1 text-center text-xl font-medium">{name}</h2>
       </div>
