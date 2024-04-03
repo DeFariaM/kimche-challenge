@@ -1,8 +1,15 @@
+//router
 import { Route, Routes, useLocation } from "react-router-dom";
+
+//components / pages
 import { Home, Landing } from "./pages";
-import { Footer, Header, Loading } from "./components";
+import { Footer, Header, Loading, NotFound } from "./components";
+
+//hooks
 import { useState } from "react";
 import { useQuery } from "@apollo/client";
+
+//utils
 import { CHARACTERS } from "./utils";
 
 function App() {
@@ -30,7 +37,7 @@ function App() {
   return (
     <>
       <div>
-        {pathname !== "/" && (
+        {pathname == "/home" && (
           <Header
             setGenderC={setGenderC}
             setNameC={setNameC}
@@ -51,6 +58,7 @@ function App() {
               )
             }
           />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         {pathname !== "/" && <Footer />}
       </div>
